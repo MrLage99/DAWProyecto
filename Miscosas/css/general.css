@@ -1,0 +1,107 @@
+
+*{
+  margin: 0;
+  padding: 0;
+   
+}
+body{
+    
+    background-color: #393737;
+}
+
+
+.menu{
+    
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+.gamelist{
+    
+    margin: 0px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+
+
+.item{
+    
+    margin: 20px;
+    height: 12em;
+    width: cal(30%-33);
+    z-index: 1;
+    min-width: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   
+  
+  
+    
+}
+
+
+.game{
+    
+    background-image: url("../imagenes/resident4.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    border-radius: 10px;
+ 
+    
+    
+}
+
+label{
+   
+    color: white;
+    font-size: 15px;
+    position:absolute;
+   
+    
+    
+}
+
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+.header-container{
+ 
+  background:linear-gradient(90deg,#000,transparent 100%);
+  background-image: url("../imagenes/resident4.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
