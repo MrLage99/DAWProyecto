@@ -1,107 +1,174 @@
+/*ESTILOS GENERALES*/
 
-*{
-  margin: 0;
-  padding: 0;
-   
+@font-face {
+  src: url("../assets/Neon.ttf");
+  font-family: "Neon";
 }
-body{
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body, html {
     
+    height: 100%;
     background-color: #393737;
 }
-
-
-.menu{
+h1{
     
-    display: inline-flex;
-    flex-direction: row-reverse;
+    font-family: "Neon", Arial, Helvetica, sans-serif;
 }
 
 
-
-
-
-.gamelist{
-    
-    margin: 0px;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    
-    
-}
-
-a:link, a:visited, a:active {
-    text-decoration:none;
-}
-
-
-
-
-.item{
-    
-    margin: 20px;
-    height: 12em;
-    width: cal(30%-33);
-    z-index: 1;
-    min-width: 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-   
-  
-  
-    
-}
-
-
-.game{
-    
-    background-image: url("../imagenes/resident4.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    border-radius: 10px;
- 
-    
-    
-}
-
-label{
-   
-    color: white;
-    font-size: 15px;
-    position:absolute;
-   
-    
-    
-}
-
-
-body, html {
-  height: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-
-
-
+/*ENCABEZADO*/
 
 .header-container{
  
   background:linear-gradient(90deg,#000,transparent 100%);
-  background-image: url("../imagenes/resident4.jpg");
-  height: 50%;
+  background-image: url("../Imagenes/fondo2.jpg");
+  height: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.cabecera{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.tituloPagina{
+    
+    margin-top:40px;
+    margin-right: 10px;
+    
+}
+.buscador{
+    
+    margin-top:190px;
+    
+    
+    
+}
+
+
+/*LISTA DE JUEGOS*/
+.enlacePag{
+   width: 100%;
+    height: 90%;
+    border-radius: 15px;
+}
+.deploygames{
+    
+    
+    margin: 15px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
+}
+.game{
+    width: calc(33.33% - 30px);
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+    
+}
+.game img{
+   width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    
+}
+.infogame{
+    width: 90%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.infogame .name{
+ 
+font-size: 15px;
+
+}
+.infogame .price{
+
+font-size: 15px;
+
+}
+
+/*FOOTER*/
+
+footer{
+    height: 25%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.instagram{ 
+  margin: 15px;
+      
+}
+.twitter{
+    
+    margin: 15px;
+     
+}
+.facebook{
+    
+    margin: 15px;
+    
+}
+.termcond{
+    
+    margin: 15px;
+    
+}
+.polipriv{
+    
+    margin: 15px;
+    
+}
+.faq{
+    
+    margin: 15px;
+    
+}
+.contacto{
+    
+    margin: 15px;
+    
+}
+.email{
+    
+    margin: 15px;
+    
+}
+.fax{
+    
+    margin: 15px;
+    
+}
+
+
+
+
+
+
 
 

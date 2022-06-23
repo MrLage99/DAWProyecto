@@ -1,3 +1,5 @@
+/*FORMULAIO (acceso/registro)*/
+
 .login-page {
   width: 50%;
   padding: 8% 0 0;
@@ -16,6 +18,7 @@ background-color:#393737;
 }
 .form input {
   font-family: "Roboto", sans-serif;
+    color: black;
   outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -29,7 +32,7 @@ background-color:#393737;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #8636A0;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -40,7 +43,8 @@ background-color:#393737;
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+  background: white;
+    color: black;
 }
 .form .message {
   margin: 15px 0 0;
@@ -48,7 +52,7 @@ background-color:#393737;
   font-size: 12px;
 }
 .form .message a {
-  color: darkred;
+  color: violet;
   text-decoration: none;
 }
 .form .register-form {
@@ -74,10 +78,10 @@ background-color:#393737;
   padding: 0;
   font-size: 36px;
   font-weight: 300;
-  color: #1a1a1a;
+  color: #8636A0;
 }
 .container .info span {
-  color: #4d4d4d;
+  color: #8636A0;
   font-size: 12px;
 }
 .container .info span a {
@@ -85,40 +89,18 @@ background-color:#393737;
   text-decoration: none;
 }
 .container .info span .fa {
-  color: red;
+  color: violet;
 }
 
 
 
 
-/*PopUp*/
-
-#popUp{
-    background-color: white;
-    border-color: white;
-    float: right;
-     width: 30px;
-    height: 30px;
-    margin: 5px;
-}
-
-
-#popUp > img:hover{
-    
-    content: url(../imagenes/menu2.png);
-    
-    
-}
-
-
-
-
-
-
+/*VENTANA*/
 
 .cierre{
+    
     width: 100%;
-    background-image: url("../imagenes/teemoDevil.jpg");
+    background-image: url("../imagenes/wp2429584.jpg");
    
   /* Add the blur effect */
  
@@ -127,57 +109,46 @@ background-color:#393737;
     height: 100%;
 
   /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     
 }
-
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.window {
+    
+    visibility: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
 }
-
-/* Modal Content/Box */
-.modal-content {
+.window-content {
     display: flex;
     flex-direction: row-reverse;
     
-  background-color: #393737;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 0px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+    background-color: #393737;
+  
+    padding: 0px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
     height: 80%;
 }
-
-
-.close {
-color: #aaa;
-float: right;
-margin-top: 7px;
-    margin-right: 7px;
-width: 25px;
-height: 25px;
-border: 1px solid white;
-border-radius: 50%;
+.close{
+    
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    
+    
 }
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
